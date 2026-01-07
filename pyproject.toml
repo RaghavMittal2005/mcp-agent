@@ -1,0 +1,25 @@
+[project]
+name = "mcp1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "RaghavMittal2005", email = "panraghav492@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "google-generativeai>=0.8.6",
+    "langchain-google-genai>=4.1.2",
+    "langchain-mcp-adapters>=0.2.1",
+    "langchain-openai>=1.1.6",
+    "mcp>=1.25.0",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+mcp = "mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.9.20,<0.10.0"]
+build-backend = "uv_build"
